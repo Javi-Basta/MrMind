@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+    
+    <TextView 
+        android:id="@+id/numeroIntento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5pt"
+        android:text="1."
+        android:textStyle="bold"
+        android:textSize="10pt" 
+    />
+    
+    <TextView
+        android:id="@+id/intentoLetra1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="1"
+        android:layout_margin="5pt"
+        android:maxLength="1"
+        android:gravity="center"
+        android:background="@android:color/darker_gray"
+        android:textSize="10pt" 
+     />
+    
+    <TextView
+        android:id="@+id/intentoLetra2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="1"
+        android:layout_margin="5pt"
+        android:maxLength="1"
+        android:gravity="center"
+        android:background="@android:color/darker_gray"
+        android:textSize="10pt" 
+     />
+    
+    <TextView
+        android:id="@+id/intentoLetra3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="1"
+        android:layout_margin="5pt"
+        android:maxLength="1"
+        android:gravity="center"
+        android:background="@android:color/holo_green_dark"
+        android:textSize="10pt" 
+     />
+    
+    <TextView
+        android:id="@+id/intentoLetra4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="1"
+        android:layout_margin="5pt"
+        android:maxLength="1"
+        android:gravity="center"
+        android:background="@android:color/darker_gray"
+        android:textSize="10pt" 
+     />
+    
+    <TextView
+        android:id="@+id/intentoLetra5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="1"
+        android:layout_margin="5pt"
+        android:maxLength="1"
+        android:gravity="center"
+        android:background="@android:color/holo_orange_light"
+        android:textSize="10pt" 
+     />
+    
+    <TextView 
+        android:id="@+id/puntuacionIntento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5pt"
+        android:text="5pts"
+        android:textStyle="bold"
+        android:textSize="10pt" 
+    />
+    
+
+</LinearLayout>

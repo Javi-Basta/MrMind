@@ -1,0 +1,326 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/botonEnviar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/abajo4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/abajo3"
+        android:layout_alignBottom="@+id/abajo3"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/abajo3"
+        android:ems="1"
+        android:maxLength="1"
+        android:gravity="center"
+        android:background="@android:color/darker_gray"
+        android:textSize="20pt" />
+
+    <EditText
+        android:id="@+id/abajo5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/abajo4"
+        android:layout_alignBottom="@+id/abajo4"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/abajo4"
+        android:ems="1"
+        android:maxLength="1"
+        android:gravity="center"
+        android:background="@android:color/darker_gray"
+        android:textSize="20pt" />
+
+    <EditText
+        android:id="@+id/abajo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/abajo3"
+        android:layout_alignBottom="@+id/abajo3"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/abajo3"
+        android:ems="1"
+        android:maxLength="1"
+        android:gravity="center"
+        android:background="@android:color/darker_gray"
+        android:textSize="20pt" />
+
+    <EditText
+        android:id="@+id/abajo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/abajo2"
+        android:layout_alignBottom="@+id/abajo2"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/abajo2"
+        android:ems="1"
+        android:maxLength="1"
+        android:gravity="center"
+        android:background="@android:color/darker_gray"
+        android:textSize="20pt" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/arriba4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/arriba3"
+        android:layout_alignBottom="@+id/arriba3"
+        android:layout_toLeftOf="@+id/abajo5"
+        android:ems="1"
+        android:text="X"
+        android:gravity="center"
+        android:background="@android:color/darker_gray"
+        android:inputType="none"
+        android:textSize="20pt" />
+
+    <EditText
+        android:id="@+id/arriba5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/arriba4"
+        android:layout_alignBottom="@+id/arriba4"
+        android:layout_alignLeft="@+id/abajo5"
+        android:ems="1"
+        android:text="X"
+        android:gravity="center"
+        android:background="@android:color/darker_gray"
+        android:inputType="none"
+        android:textSize="20pt" />
+
+    <EditText
+        android:id="@+id/arriba2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/arriba3"
+        android:layout_alignBottom="@+id/arriba3"
+        android:layout_alignLeft="@+id/abajo2"
+        android:ems="1"
+        android:text="X"
+        android:gravity="center"
+        android:background="@android:color/darker_gray"
+        android:inputType="none"
+        android:textSize="20pt" />
+
+    <EditText
+        android:id="@+id/arriba1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/arriba2"
+        android:layout_alignBottom="@+id/arriba2"
+        android:layout_alignLeft="@+id/abajo1"
+        android:ems="1"
+        android:background="@android:color/darker_gray"
+        android:text="X"
+        android:gravity="center"
+        android:inputType="none"
+        android:textSize="20pt" />
+
+    <EditText
+        android:id="@+id/abajo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:ems="1"
+        android:maxLength="1"
+        android:gravity="center"
+        android:background="@android:color/darker_gray"
+        android:textSize="20pt" />
+
+    <EditText
+        android:id="@+id/arriba3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/abajo2"
+        android:ems="1"
+        android:text="X"
+        android:gravity="center"
+        android:background="@android:color/darker_gray"
+        android:inputType="none"
+        android:textSize="20pt" />
+
+    <TextView
+        android:id="@+id/textoJugador2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/arriba1"
+        android:layout_below="@+id/arriba4"
+        android:layout_marginTop="13dp"
+        android:text="Este es el texto del jugador 2"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textoJugador2"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/i12"
+            android:layout_width="22dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="12"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Space
+            android:id="@+id/Space1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_vertical" />
+
+        <TextView
+            android:id="@+id/i10"
+            android:layout_width="21dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/i12"
+            android:layout_below="@+id/i11"
+            android:layout_marginTop="2dp"
+            android:text="10"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/i9"
+            android:layout_width="21dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/i10"
+            android:layout_below="@+id/i10"
+            android:layout_marginTop="2dp"
+            android:text="9"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/i8"
+            android:layout_width="21dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/i9"
+            android:layout_below="@+id/i9"
+            android:layout_marginTop="2dp"
+            android:text="8"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/i7"
+            android:layout_width="21dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/i8"
+            android:layout_below="@+id/i8"
+            android:layout_marginTop="2dp"
+            android:text="7"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/i6"
+            android:layout_width="21dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/i7"
+            android:layout_below="@+id/i7"
+            android:layout_marginTop="2dp"
+            android:text="6"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/i11"
+            android:layout_width="21dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/i10"
+            android:layout_below="@+id/i12"
+            android:layout_marginTop="2dp"
+            android:text="11"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/i5"
+            android:layout_width="21dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/i6"
+            android:layout_below="@+id/i6"
+            android:layout_marginTop="2dp"
+            android:text="5"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/i4"
+            android:layout_width="21dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/i5"
+            android:layout_below="@+id/i5"
+            android:layout_marginTop="2dp"
+            android:text="4"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/i3"
+            android:layout_width="21dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/i4"
+            android:layout_below="@+id/i4"
+            android:layout_marginTop="2dp"
+            android:text="3"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/i2"
+            android:layout_width="21dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/i3"
+            android:layout_below="@+id/i3"
+            android:text="2"
+            android:layout_marginTop="2dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/i1"
+            android:layout_width="21dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/i2"
+            android:layout_below="@+id/i2"
+            android:layout_marginTop="2dp"
+            android:text="1"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textoJugador1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/abajo1"
+        android:layout_alignLeft="@+id/abajo1"
+        android:layout_marginBottom="14dp"
+        android:text="Este es el texto del jugador 1"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/botonEnviar1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textoJugador1"
+        android:layout_alignRight="@+id/abajo5"
+        android:layout_below="@+id/RelativeLayout1"
+        android:text="Enviar" />
+
+    <Button
+        android:id="@+id/botonEnviar2"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/arriba5"
+        android:layout_alignTop="@+id/textoJugador2"
+        android:text="Enviar" />
+
+</RelativeLayout>
