@@ -10,13 +10,13 @@
     tools:context=".MainActivity" >
 
     <EditText
-        android:id="@+id/abajo4"
+        android:id="@+id/letraAbajo4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/abajo3"
-        android:layout_alignBottom="@+id/abajo3"
+        android:layout_alignBaseline="@+id/letraAbajo3"
+        android:layout_alignBottom="@+id/letraAbajo3"
         android:layout_marginLeft="15dp"
-        android:layout_toRightOf="@+id/abajo3"
+        android:layout_toRightOf="@+id/letraAbajo3"
         android:ems="1"
         android:maxLength="1"
         android:gravity="center"
@@ -24,13 +24,13 @@
         android:textSize="20pt" />
 
     <EditText
-        android:id="@+id/abajo5"
+        android:id="@+id/letraAbajo5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/abajo4"
-        android:layout_alignBottom="@+id/abajo4"
+        android:layout_alignBaseline="@+id/letraAbajo4"
+        android:layout_alignBottom="@+id/letraAbajo4"
         android:layout_marginLeft="15dp"
-        android:layout_toRightOf="@+id/abajo4"
+        android:layout_toRightOf="@+id/letraAbajo4"
         android:ems="1"
         android:maxLength="1"
         android:gravity="center"
@@ -38,13 +38,13 @@
         android:textSize="20pt" />
 
     <EditText
-        android:id="@+id/abajo2"
+        android:id="@+id/letraAbajo2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/abajo3"
-        android:layout_alignBottom="@+id/abajo3"
+        android:layout_alignBaseline="@+id/letraAbajo3"
+        android:layout_alignBottom="@+id/letraAbajo3"
         android:layout_marginRight="15dp"
-        android:layout_toLeftOf="@+id/abajo3"
+        android:layout_toLeftOf="@+id/letraAbajo3"
         android:ems="1"
         android:maxLength="1"
         android:gravity="center"
@@ -52,13 +52,13 @@
         android:textSize="20pt" />
 
     <EditText
-        android:id="@+id/abajo1"
+        android:id="@+id/letraAbajo1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/abajo2"
-        android:layout_alignBottom="@+id/abajo2"
+        android:layout_alignBaseline="@+id/letraAbajo2"
+        android:layout_alignBottom="@+id/letraAbajo2"
         android:layout_marginRight="15dp"
-        android:layout_toLeftOf="@+id/abajo2"
+        android:layout_toLeftOf="@+id/letraAbajo2"
         android:ems="1"
         android:maxLength="1"
         android:gravity="center"
@@ -69,12 +69,12 @@
     </EditText>
 
     <EditText
-        android:id="@+id/arriba4"
+        android:id="@+id/letraArriba4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/arriba3"
-        android:layout_alignBottom="@+id/arriba3"
-        android:layout_toLeftOf="@+id/abajo5"
+        android:layout_alignBaseline="@+id/letraArriba3"
+        android:layout_alignBottom="@+id/letraArriba3"
+        android:layout_toLeftOf="@+id/letraAbajo5"
         android:ems="1"
         android:text="X"
         android:gravity="center"
@@ -83,12 +83,12 @@
         android:textSize="20pt" />
 
     <EditText
-        android:id="@+id/arriba5"
+        android:id="@+id/letraArriba5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/arriba4"
-        android:layout_alignBottom="@+id/arriba4"
-        android:layout_alignLeft="@+id/abajo5"
+        android:layout_alignBaseline="@+id/letraArriba4"
+        android:layout_alignBottom="@+id/letraArriba4"
+        android:layout_alignLeft="@+id/letraAbajo5"
         android:ems="1"
         android:text="X"
         android:gravity="center"
@@ -97,12 +97,12 @@
         android:textSize="20pt" />
 
     <EditText
-        android:id="@+id/arriba2"
+        android:id="@+id/letraArriba2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/arriba3"
-        android:layout_alignBottom="@+id/arriba3"
-        android:layout_alignLeft="@+id/abajo2"
+        android:layout_alignBaseline="@+id/letraArriba3"
+        android:layout_alignBottom="@+id/letraArriba3"
+        android:layout_alignLeft="@+id/letraAbajo2"
         android:ems="1"
         android:text="X"
         android:gravity="center"
@@ -111,12 +111,12 @@
         android:textSize="20pt" />
 
     <EditText
-        android:id="@+id/arriba1"
+        android:id="@+id/letraArriba1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/arriba2"
-        android:layout_alignBottom="@+id/arriba2"
-        android:layout_alignLeft="@+id/abajo1"
+        android:layout_alignBaseline="@+id/letraArriba2"
+        android:layout_alignBottom="@+id/letraArriba2"
+        android:layout_alignLeft="@+id/letraAbajo1"
         android:ems="1"
         android:background="@android:color/darker_gray"
         android:text="X"
@@ -125,7 +125,7 @@
         android:textSize="20pt" />
 
     <EditText
-        android:id="@+id/abajo3"
+        android:id="@+id/letraAbajo3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -137,11 +137,11 @@
         android:textSize="20pt" />
 
     <EditText
-        android:id="@+id/arriba3"
+        android:id="@+id/letraArriba3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/abajo2"
+        android:layout_toRightOf="@+id/letraAbajo2"
         android:ems="1"
         android:text="X"
         android:gravity="center"
@@ -153,8 +153,8 @@
         android:id="@+id/textoJugador2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/arriba1"
-        android:layout_below="@+id/arriba4"
+        android:layout_alignLeft="@+id/letraArriba1"
+        android:layout_below="@+id/letraArriba4"
         android:layout_marginTop="13dp"
         android:text="Este es el texto del jugador 2"
         android:textAppearance="?android:attr/textAppearanceSmall" />
@@ -298,8 +298,8 @@
         android:id="@+id/textoJugador1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/abajo1"
-        android:layout_alignLeft="@+id/abajo1"
+        android:layout_above="@+id/letraAbajo1"
+        android:layout_alignLeft="@+id/letraAbajo1"
         android:layout_marginBottom="14dp"
         android:text="Este es el texto del jugador 1"
         android:textAppearance="?android:attr/textAppearanceSmall" />
@@ -310,7 +310,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/textoJugador1"
-        android:layout_alignRight="@+id/abajo5"
+        android:layout_alignRight="@+id/letraAbajo5"
         android:layout_below="@+id/RelativeLayout1"
         android:text="Enviar" />
 
@@ -319,7 +319,7 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/arriba5"
+        android:layout_alignRight="@+id/letraArriba5"
         android:layout_alignTop="@+id/textoJugador2"
         android:text="Enviar" />
 

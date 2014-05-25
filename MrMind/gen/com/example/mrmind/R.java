@@ -28,17 +28,7 @@ public final class R {
     public static final class id {
         public static final int RelativeLayout1=0x7f08000f;
         public static final int Space1=0x7f080011;
-        public static final int abajo1=0x7f080008;
-        public static final int abajo2=0x7f080007;
-        public static final int abajo3=0x7f080005;
-        public static final int abajo4=0x7f080004;
-        public static final int abajo5=0x7f080006;
         public static final int action_settings=0x7f08002c;
-        public static final int arriba1=0x7f08000d;
-        public static final int arriba2=0x7f08000c;
-        public static final int arriba3=0x7f08000a;
-        public static final int arriba4=0x7f080009;
-        public static final int arriba5=0x7f08000b;
         public static final int botonDosJugadores=0x7f080021;
         public static final int botonEnviar=0x7f080000;
         public static final int botonEnviar1=0x7f08001e;
@@ -66,6 +56,16 @@ public final class R {
         public static final int intentoLetra3=0x7f080028;
         public static final int intentoLetra4=0x7f080029;
         public static final int intentoLetra5=0x7f08002a;
+        public static final int letraAbajo1=0x7f080008;
+        public static final int letraAbajo2=0x7f080007;
+        public static final int letraAbajo3=0x7f080005;
+        public static final int letraAbajo4=0x7f080004;
+        public static final int letraAbajo5=0x7f080006;
+        public static final int letraArriba1=0x7f08000d;
+        public static final int letraArriba2=0x7f08000c;
+        public static final int letraArriba3=0x7f08000a;
+        public static final int letraArriba4=0x7f080009;
+        public static final int letraArriba5=0x7f08000b;
         public static final int numeroIntento=0x7f080025;
         public static final int puntuacionIntento=0x7f08002b;
         public static final int textoInstrucciones=0x7f080001;
