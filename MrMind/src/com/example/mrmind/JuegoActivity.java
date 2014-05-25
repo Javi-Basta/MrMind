@@ -205,8 +205,11 @@ public class JuegoActivity extends Activity {
 										case 4:
 											intento.getLetra5().setBackgroundColor(Color.GREEN);
 											break;
+										
+										default:
+											break;
 									
-									} //switch
+									} //end switch
 									
 								} else {//Las letras coinciden en distinta posicion (color amarillo y 1 pto)
 									
@@ -233,15 +236,18 @@ public class JuegoActivity extends Activity {
 										case 4:
 											intento.getLetra5().setBackgroundColor(Color.YELLOW);
 											break;
+										
+										default:
+											break;
 									
-									} //switch
+									}// end switch
 									
-								}//else
+								}//end else
 								
-							} //if coinciden
+							} //end if coinciden
 							
-						} //for k
-					}//for j
+						} //end for k
+					}//end for j
 					
 					intento.setPuntuacion(Integer.toString(puntuacionIntento));
 					
@@ -253,11 +259,18 @@ public class JuegoActivity extends Activity {
 						
 					}
 					
-				} //for 12 intentos
+					this.puntosPartida -= 10; //Restamos los 10 puntos de penalizacion por intento fallido
+					
+				} //end for 12 intentos
 				
 //				if (i != 0) { //el jugador ha ganado
 //					
+				//Mensaje exito
 //					
+//				} else { // el jugador ha perdido
+//
+				//Mensaje fallo
+//				
 //				}
 				
 				
