@@ -37,6 +37,8 @@ public class JuegoActivity extends Activity {
 	private String palabraMisteriosa;
 	private String palabraIntento;
 	
+	private int numeroIntento;
+	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -76,9 +78,12 @@ public class JuegoActivity extends Activity {
 		//Extraer palabra al azar de BBDD
 		
 		this.puntosPartida = 120;
+		this.numeroIntento = 12;
 		
 		this.botonEnviarJugador2.setVisibility(View.INVISIBLE);
 		this.textoJugador2.setVisibility(View.INVISIBLE);
+		
+		
 	}
 	
 	public void partidaDosJugadores(Jugador jugador1, Jugador jugador2){
@@ -88,6 +93,7 @@ public class JuegoActivity extends Activity {
 		//Login jugador 2
 		
 		this.puntosPartida = 120;
+		this.numeroIntento = 12;
 		
 	}
 	
@@ -99,7 +105,7 @@ public class JuegoActivity extends Activity {
 			
 			//Mostrar mensaje de error
 			
-			 AlertDialog alerta= new AlertDialog.Builder(this).create(); //Aqui me marca el siguiente error The constructor AlertDialog.Builder(new View.OnClickListener(){}) is undefined
+			 AlertDialog alerta = new AlertDialog.Builder(this).create(); //Aqui me marca el siguiente error The constructor AlertDialog.Builder(new View.OnClickListener(){}) is undefined
 
 		        alerta.setTitle("Error");
 
@@ -123,6 +129,15 @@ public class JuegoActivity extends Activity {
 					this.letra5Arriba.getText().toString();
 			
 			// Mensaje de que todo ha ido bien??
+			
+			this.letra1Arriba.setText("X");
+			this.letra2Arriba.setText("X");
+			this.letra3Arriba.setText("X");
+			this.letra4Arriba.setText("X");
+			this.letra5Arriba.setText("X");
+			
+			this.botonEnviarJugador2.setVisibility(View.INVISIBLE);
+			this.textoJugador2.setVisibility(View.INVISIBLE);
 			
 		}
 		
@@ -168,13 +183,15 @@ public class JuegoActivity extends Activity {
 				intento.setLetra4(this.letra4Abajo.getText().toString());
 				intento.setLetra5(this.letra5Abajo.getText().toString());
 				
-				for (int i=12; i > 0; i--) {
+				
+				//BUCLE DE JUEGO
+				while (this.numeroIntento != 0) {
 					
 					int puntuacionIntento = 0;
 					
-					intento.setNumeroIntento(Integer.toString(i));
+					intento.setNumeroIntento(Integer.toString(this.numeroIntento));
 					
-					//Comprobamos letra por letra respecto a las letras de la palabra misteriosa
+					//COMPROBACION LETRAS RESPECTO A PALABRA MISTERIOSA
 					for (int j=0; j < 5; j++) { //recorrer letras del intento
 						for (int k=0; k < 5; k++) { //recorrer letras de la palabra misteriosa
 							
@@ -249,29 +266,38 @@ public class JuegoActivity extends Activity {
 						} //end for k
 					}//end for j
 					
+					//FIN COMPARACION LETRAS
+					
 					intento.setPuntuacion(Integer.toString(puntuacionIntento));
 					
 					if(this.palabraIntento.equals(this.palabraMisteriosa)) {
 						
 						
 						//añadir intento a listview
+						
 						break;
 						
 					}
 					
 					this.puntosPartida -= 10; //Restamos los 10 puntos de penalizacion por intento fallido
+					this.puntosPartida += puntuacionIntento; //sumamos los ptos conseguidos por el intento
+					this.numeroIntento--;
 					
-				} //end for 12 intentos
+				} //end while 12 intentos
 				
-//				if (i != 0) { //el jugador ha ganado
-//					
-				//Mensaje exito
-//					
-//				} else { // el jugador ha perdido
-//
-				//Mensaje fallo
-//				
-//				}
+				
+				//FINAL DE LA PARTIDA
+				if (this.numeroIntento != 0) { //el jugador ha ganado
+					
+					int puntuacionJugador2 = 120 - this.puntosPartida;
+					//Mensaje exito
+					
+				} else { // el jugador ha perdido
+					
+					int puntuacionJugador2 = 120;
+					//Mensaje fallo
+				
+				}
 				
 				
 			}
